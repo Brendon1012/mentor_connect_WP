@@ -1,0 +1,61 @@
+/* Design tokens. Change a colour here and it updates across the whole site. */
+:root {
+  /* Brand palette */
+  --navy: #0b1f3a;
+  --navy-80: #1b3254;
+  --blue: #1e40af;
+  --blue-hover: #1a3699;
+  --blue-light: #e8f1fb;
+  --gold: #d4a017; /* primary call-to-action buttons only */
+  --gold-hover: #bf8f12;
+  --white: #ffffff;
+
+  /* Neutrals */
+  --gray-50: #f5f7fa;
+  --gray-100: #eef1f5;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-500: #5b6b80; /* 5.3:1 on white, passes WCAG AA for body text */
+  --gray-700: #334155;
+  --gray-900: #0f172a;
+
+  /* Status colours */
+  --success: #15803d;
+  --success-bg: #e7f6ec;
+  --warning: #a15c07;
+  --warning-bg: #fdf3e1;
+  --danger: #b91c1c;
+  --danger-bg: #fdecec;
+  --info-bg: var(--blue-light);
+
+  /* Typography */
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Shape and depth */
+  --radius-sm: 8px;
+  --radius: 12px; /* rounded-xl cards */
+  --radius-lg: 16px;
+  --radius-full: 999px;
+  --shadow-sm: 0 1px 2px rgba(11, 31, 58, 0.06);
+  --shadow: 0 1px 3px rgba(11, 31, 58, 0.08), 0 4px 12px rgba(11, 31, 58, 0.05);
+  --shadow-lg: 0 10px 30px rgba(11, 31, 58, 0.12);
+
+  /* Motion */
+  --transition: 180ms ease;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: 16px;
+  --nav-height: 64px;
+  --sidebar-width: 248px;
+  --sidebar-collapsed: 72px;
+
+  --focus-ring: 0 0 0 3px rgba(30, 64, 175, 0.35);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px;
+  }
+}

@@ -1,0 +1,31 @@
+.back-link { margin-bottom: 16px; padding-left: 8px; }
+
+.profile-hero { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+@media (min-width: 640px) { .profile-hero { flex-direction: row; align-items: center; } }
+.profile-hero h1 { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+.profile-hero-main { flex: 1; min-width: 0; }
+.profile-title { font-weight: 600; color: var(--gray-700); margin: 4px 0 2px; }
+.profile-facts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-top: 12px; font-size: 0.9rem; }
+.profile-facts > span { display: inline-flex; align-items: center; gap: 6px; }
+.profile-facts svg { width: 16px; height: 16px; color: var(--blue); }
+.profile-facts .stars svg { color: var(--gold); }
+
+.profile-grid { display: grid; gap: 20px; margin-top: 20px; align-items: start; }
+@media (min-width: 960px) { .profile-grid { grid-template-columns: 1fr 340px; } .profile-aside { position: sticky; top: calc(var(--nav-height) + 20px); } }
+
+.profile-h { display: flex; align-items: center; gap: 8px; font-size: 1.1rem; margin-bottom: 12px; }
+.profile-h svg { width: 18px; height: 18px; color: var(--blue); }
+.profile-sub { font-size: 0.95rem; margin: 18px 0 8px; }
+.prewrap { white-space: pre-line; margin: 0; }
+.bullet-list { padding-left: 20px; display: grid; gap: 4px; }
+
+.timeline { list-style: none; display: grid; gap: 16px; }
+.timeline li { position: relative; padding-left: 20px; }
+.timeline li::before { content: ''; position: absolute; left: 0; top: 8px; width: 9px; height: 9px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 3px var(--blue-light); }
+
+.day-row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.day { text-align: center; padding: 6px 0; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; background: var(--gray-100); color: var(--gray-500); }
+.day.on { background: var(--blue); color: var(--white); }
+
+.review { padding: 14px; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); }
+a.tag:hover { text-decoration: none; background: #d8e7f8; }
